@@ -40,7 +40,14 @@ gem 'spring',        group: :development
 
 gem 'haml-rails'
 gem 'backbone-on-rails'
+gem 'country_select'
 
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
+
+gem 'pry-rails', :group => :development
+
+group :test, :development do
+  gem 'jasmine-rails'
+end

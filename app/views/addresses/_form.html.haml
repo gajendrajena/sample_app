@@ -15,5 +15,19 @@
   .field
     = f.label :pin
     = f.text_field :pin
+  .field
+    = f.label :pin
+    = f.country_select :country
   .actions
     = f.submit 'Save'
+:javascript
+  $(document).on('submit', 'form#new_address', function(){
+
+  if( $('#address_line1').val() != '' ){
+    alert($('#address_line1').val())
+  }else{
+    alert('empty')
+  }
+  return false;
+
+  });

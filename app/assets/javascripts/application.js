@@ -25,6 +25,7 @@
 
 $(document).on('click', 'a#new_user_link',function(e){
 	e.preventDefault();
+	debugger
 	$.ajax({
 		url: 'users/new',
 		dataType: 'script'
