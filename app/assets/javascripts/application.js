@@ -13,6 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require select2
+//= require country_select
+
 //= require turbolinks
 //= require underscore
 //= require backbone

@@ -15,9 +15,12 @@
   .field
     = f.label :pin
     = f.text_field :pin
+  / .field
+  /   = f.label :country
+  /   = f.country_select :country
   .field
-    = f.label :pin
-    = f.country_select :country
+    = f.label :country
+    = f.text_field :country, class: 'country_select'
   .actions
     = f.submit 'Save'
 :javascript
@@ -31,3 +34,6 @@
   return false;
 
   });
+
+  // build country select using jquery Autocomplete();
+
